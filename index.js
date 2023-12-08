@@ -4,7 +4,7 @@ const path = require('path');
 
 http.createServer((req, res) => {
     console.log(req.url);
-    res.setHeader("Access-Control-Allow-origin","*");
+    res.setHeader("Access-Control-Allow-origin");
     if (req.url === '/') {
         // home page
         fs.readFile(path.join(__dirname, 'public', 'index.html'), (err, content) => {
