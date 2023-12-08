@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 http.createServer((req, res) => {
-    res.setHeader ("Access-Control-Allow-Origin": "*");
+res.setHeader("Access-Control-Allow-Origin", "*");
     console.log(req.url);
     if (req.url === '/') {
         // home page
